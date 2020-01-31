@@ -99,6 +99,17 @@
                 <li><a class="circ-btn" href="http://twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
             </ul>
         </div>
+        <div class="subscription">
+            <h3 class="title">Subscribe to<br> Newsletter</h3>
+            <!-- Begin Ajax subscription form  subscription-form -->
+            <form id="subscription-form" class="form send_email_form" method="post" action="http://demo.highhay.com/firetime/ajaxserver/serverfile.php">
+                <p class="feedback gone form-success-visible">Thank you for your subscription. We will inform you.</p>
+                <input id="reg-email" class="input form-success-invisible" name="email" type="email" required placeholder="your@email.address" data-validation-type="email">
+                <button id="submit-email" class="btn circ-btn form-success-invisible" name="submit_email">
+                    <span class="ion-checkmark"></span>
+                </button>
+            </form>
+        </div>
     </footer>
     <!-- END OF site footer -->
 
