@@ -30,7 +30,7 @@ ul, li {
   list-style: none outside none;
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", "Helvetica", sans-serif; }
 
 h3, h4 {
@@ -263,7 +263,7 @@ strong,
     .section .content .title-desc h2 {
       font-size: 3rem;
       font-weight: bold; }
-    .section .content .title-desc h1, .section .content .title-desc h2, .section .content .title-desc h3, .section .content .title-desc h4 {
+    .section .content .title-desc h2, .section .content .title-desc h2, .section .content .title-desc h3, .section .content .title-desc h4 {
       margin-bottom: 0.25em; }
     .section .content .title-desc ul, .section .content .title-desc li {
       list-style: circle;
@@ -342,7 +342,8 @@ strong,
 @media (max-width: 601px) {
   .title h2 {
     display: none;
-  }}
+  }
+}
 .section-home .anim .anim-wrapper {
   overflow: hidden;
   display: block; }
@@ -497,12 +498,17 @@ strong,
   .site-footer .subscription {
     float: left;
     display: block; }
-    @media (min-width: 601px) {
-      .site-footer .subscription {
-        float: right;
-        position: absolute;
-        right: 64px;
-        bottom: 32px; } }
+  @media (min-width: 601px) {
+  .site-footer .subscription {
+    float: right;
+    position: absolute;
+    right: 64px;
+    bottom: 32px; } }
+    @media screen and (max-width: 601px){
+      .site-footer .subscription{
+        width: 100%;
+      }
+    }
     .site-footer .subscription .title {
       padding-top: 16px;
       text-align: left;
