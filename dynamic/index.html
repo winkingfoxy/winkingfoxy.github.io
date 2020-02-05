@@ -40,6 +40,9 @@
 	</div>
     <!-- BEGIN OF page cover -->
     <div class="hh-cover page-cover">
+        <!-- UNCOMMENT WHAT U WANT TO USE -->
+        <!-- Cover Background IMG -->
+        <!-- <div class="cover-bg pos-abs full-size bg-img  bg-blur-0" data-image-src="img/bg-default.jpg"></div>  -->
        <!-- Cover Background GRADIENT -->
          <div class="pos-abs full-size bg-gradient  bg-blur-0"></div>
         <!-- Transluscent mask as filter -->
@@ -100,9 +103,9 @@
             <h3 class="title">Subscribe to<br> Newsletter</h3>
             <!-- Begin Ajax subscription form  subscription-form -->
             <form id="subscription-form" class="form send_email_form" method="post" action="send.php">
-                <p class="feedback gone form-success-visible">Thank you for your subscription. We will inform you.</p>
+                <!-- <p class="feedback gone form-success-visible">Thank you for your subscription. We will inform you.</p> -->
                 <input id="reg-email" class="input form-success-invisible" name="email" type="email" required placeholder="your@email.address" data-validation-type="email">
-                <button id="submit-email" class="btn circ-btn form-success-invisible" name="submit_email">
+                <button id="submit-email" class="btn circ-btn form-success-invisible" name="submit_email" type="submit">
                     <span class="ion-checkmark"></span>
                 </button>
             </form>
@@ -115,7 +118,7 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/all.js"></script>
         <!-- Form script -->
-    <script src="js/form_script.js"></script>
+    <!-- <script src="js/form_script.js"></script> -->
     <!-- Javascript main files -->
     <script src="js/main.js"></script>
 </body>
