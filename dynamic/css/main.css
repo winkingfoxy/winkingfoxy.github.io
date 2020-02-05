@@ -339,7 +339,10 @@ strong,
   @media (min-width: 601px) {
     .section-home .content .home-logo img {
       height: 240px; } }
-
+@media (max-width: 601px) {
+  .title h2 {
+    display: none;
+  }}
 .section-home .anim .anim-wrapper {
   overflow: hidden;
   display: block; }
