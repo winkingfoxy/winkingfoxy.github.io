@@ -466,6 +466,15 @@ strong,
       width: 100%;
       padding-left: 64px;
       padding-bottom: 32px; } }
+  @media (min-width: 360px) {
+    .site-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding-left: 10px;
+      padding-bottom: 10px; } }
 
   .site-footer .contact {
     float: left;
