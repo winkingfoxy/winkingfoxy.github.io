@@ -2,7 +2,7 @@
     //Получаем данные из глобальной переменной $_GET, так как мы передаем данные методом GET
     $email = $_POST['submit_email']; // Вытаскиваем имя в переменную
     $message = "Email: $email"; // Формируем сообщение, отправляемое на почту
-    $to = "powerandsoull@gmail.com"; // Задаем получателя письма
+    $to = "hello.dynamic.team@gmail.com"; // Задаем получателя письма
     $from = "noreply"; // От кого пришло письмо
     $subject = "subscribtion"; // Задаем тему письма
     $headers = "From: $from\r\nReply-To: $to\r\nContent-type: text/html; charset=utf-8\r\n"; // Формируем заголовок письма (при неправильном формировании может ломаться кодировка и т.д.)
@@ -24,7 +24,7 @@ $mail->Port       = 465;
 $mail->Username   = "your egmail adress here";
 $mail->Password   = "yourgmail password here";
 
-$mail->From = 'noreply';
+$mail->From = 'no-reply@site.com';
 $mail->Subject = 'subscription';
 $mail->addAddress($to);
 $mail->Body = $message;
